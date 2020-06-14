@@ -1,0 +1,16 @@
+title: THI HỌC KÌ I MÔN TIN HỌC LỚP 9
+description: 'Học sinh lớp 9 '
+template:
+  repo: thi-hoc-ki-i-mon-tin-hoc-lop-9-template
+  name: thi-hoc-ki-i-mon-tin-hoc-lop-9
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
